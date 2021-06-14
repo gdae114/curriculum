@@ -9,9 +9,9 @@ public class Task1_1 {
         //double型の変数hogeDoubleで宣言し、「0.2」で初期化。
     double hogeDouble = 0.2 ;
 
-    int hogeInt = 100;
+    hogeInt = 100;
 
-    String hogeString = "合格";
+    hogeString = "合格";
 
     System.out.println(hogeInt);
 
