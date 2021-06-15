@@ -18,16 +18,17 @@ public class Check{
             System.out.print(data[i] + " ");
         }
         System.out.println();
-        for (int i = 0; i < 5/*ここに記述*/; i++) {
-            for (int j = /*ここに記述*/; j > i; j--) {
+
+        for (int i = 0; i < 4/*ここに記述*/; i++) {
+            for (int j = 4/*ここに記述*/; j > i; j--) {
                 /*
                 * 問3
                 * 以下、配列の添字を入れてソートを完成させなさい
                 */
-                if(data[j/*ここに記述*/] > data[i/*ここに記述*/]){
-                  int box = data[i];
-                  data[i] = data[j];
-                  data[j] = box;
+                if(data[j] > data[j-1]){
+                  int box = data[j];
+                  data[j] = data[j-1];
+                  data[j-1] = box;
                 }
             }
         }
